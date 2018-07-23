@@ -1,0 +1,338 @@
+@charset "UTF-8";
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.btn {
+  color: #FFFFFF;
+  font-size: 16px;
+  /* IE滤镜 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#8F2a8bfe,endColorstr=#8F2a8bfe);
+  /* CSS3 */
+  background-color: rgba(42, 139, 254, 0.8);
+  border: none;
+  border-radius: 5px; }
+
+/* 登录界面样式开始 */
+html, body, .login {
+  width: 100%;
+  height: 100%; }
+
+.login {
+  background: url(~assets/img/login/loginBg.png) no-repeat center;
+  background-size: cover; }
+
+.login .box {
+  width: 1180px;
+  min-height: 730px;
+  margin: 0 auto;
+  padding-top: 40px;
+  /*logo开始*/
+  /*标题开始*/
+  /*表单开始*/ }
+  .login .box .logo {
+    width: 100%;
+    height: 64px;
+    text-align: center; }
+  .login .box .title {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background: url(~assets/img/login/logoCenter.png) no-repeat center; }
+    .login .box .title .titleLeft, .login .box .title .titleRight {
+      width: 300px;
+      height: 70px; }
+    .login .box .title .titleLeft {
+      background: url(~assets/img/login/logoLeft.png) no-repeat left center; }
+    .login .box .title .titleRight {
+      background: url(~assets/img/login/logoRight.png) no-repeat right center; }
+  .login .box form {
+    width: 400px;
+    margin: 0 auto;
+    /*统一行开始*/
+    /*验证码开始*/
+    /*阅读判断开始*/
+    /* 注册开始 */ }
+    .login .box form .group {
+      width: 100%;
+      height: 48px;
+      margin: 20px 0;
+      /* IE滤镜 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#8FFFFFFF,endColorstr=#8FFFFFFF);
+      /* CSS3 */
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px; }
+      .login .box form .group input {
+        width: 340px;
+        height: 48px;
+        line-height: 48px;
+        background: transparent;
+        border: none;
+        outline: medium; }
+      .login .box form .group span {
+        display: block;
+        width: 60px;
+        height: 48px; }
+      .login .box form .group .shouji {
+        background: url(~assets/img/login/loginIcon01.png) no-repeat center; }
+      .login .box form .group .nicheng {
+        background: url(~assets/img/login/loginIcon03.png) no-repeat center; }
+      .login .box form .group .mima {
+        background: url(~assets/img/login/loginIcon04.png) no-repeat center; }
+      .login .box form .group .mima2 {
+        background: url(~assets/img/login/loginIcon05.png) no-repeat center; }
+    .login .box form .groupYz {
+      width: 400px;
+      height: 48px; }
+      .login .box form .groupYz .groupLeft {
+        width: 300px;
+        height: 48px;
+        /* IE滤镜 */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#8FFFFFFF,endColorstr=#8FFFFFFF);
+        /* CSS3 */
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px; }
+        .login .box form .groupYz .groupLeft span {
+          display: block;
+          width: 60px;
+          height: 48px;
+          background: url(~assets/img/login/loginIcon02.png) no-repeat center; }
+        .login .box form .groupYz .groupLeft input {
+          width: 240px;
+          height: 48px;
+          line-height: 48px;
+          background: transparent;
+          border: none;
+          outline: medium; }
+      .login .box form .groupYz .btn01 {
+        width: 90px;
+        height: 48px; }
+    .login .box form .groupCon {
+      width: 100%;
+      height: 24px;
+      line-height: 24px;
+      margin-top: 40px;
+      text-align: right; }
+      .login .box form .groupCon .confirm {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url(~assets/img/login/loginIcon06.png) no-repeat center;
+        cursor: pointer; }
+        .login .box form .groupCon .confirm:hover, .login .box form .groupCon .confirm:focus {
+          background: url(~assets/img/login/loginIcon07.png) no-repeat center; }
+      .login .box form .groupCon p {
+        color: #333333; }
+        .login .box form .groupCon p i {
+          color: #2a8bfe;
+          font-style: normal;
+          text-decoration: underline; }
+    .login .box form .submit {
+      width: 100%;
+      height: 48px;
+      margin: 20px 0; }
+      .login .box form .submit .input02 {
+        width: 100%;
+        height: 48px;
+        font-size: 22px; }
+
+/* 登录界面样式结束 */
+/* 个人信息页开始 */
+/* 顶部导航开始 */
+.header {
+  width: 1366px;
+  height: 60px;
+  margin: 0 auto;
+  overflow: hidden; }
+  .header .headerLogo {
+    width: 300px;
+    height: 60px;
+    background: url(~assets/img/login/logo01.png) no-repeat left center; }
+  .header .headerRight {
+    width: 600px;
+    height: 60px;
+    overflow: hidden; }
+    .header .headerRight .nav ul li {
+      float: left; }
+    .header .headerRight .nav ul li a {
+      color: #333333;
+      line-height: 60px;
+      padding: 0 20px; }
+      .header .headerRight .nav ul li a:hover, .header .headerRight .nav ul li a:focus {
+        color: #2a8bfe; }
+    .header .headerRight .loginInfor {
+      height: 30px;
+      margin-top: 15px; }
+      .header .headerRight .loginInfor span:first-child {
+        width: 30px;
+        height: 30px;
+        background: url(~assets/img/login/headMin.png) no-repeat center; }
+      .header .headerRight .loginInfor span:first-child + span {
+        color: #0668dc;
+        line-height: 30px;
+        padding: 0 8px; }
+      .header .headerRight .loginInfor span:first-child + span + span {
+        width: 20px;
+        height: 30px;
+        background: url(~assets/img/login/xiala.png) no-repeat center;
+        cursor: progress; }
+
+/* banner开始 */
+.banner {
+  width: 100%;
+  height: 230px;
+  background-color: #7bb7ff; }
+  .banner .banners {
+    width: 1366px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; }
+    .banner .banners .out {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      background: url(~assets/img/login/bannerOut.png) no-repeat center; }
+
+/* banner结束 */
+/* 面包屑开始 */
+.Breadcrumb {
+  width: 100%;
+  height: 36px;
+  background-color: #f9fafa; }
+  .Breadcrumb .BreadcrumbItems {
+    width: 1366px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto; }
+    .Breadcrumb .BreadcrumbItems span, .Breadcrumb .BreadcrumbItems a {
+      font-size: 18px; }
+    .Breadcrumb .BreadcrumbItems span {
+      color: #323232; }
+      .Breadcrumb .BreadcrumbItems span a {
+        color: #2A8BFE; }
+
+/* 主体内容开始 */
+.container {
+  width: 1366px;
+  min-height: 470px;
+  margin: 0 auto;
+  /* 左侧表单开始 */
+  /* 右侧账号登录开始 */ }
+  .container .form {
+    width: 700px; }
+    .container .form .form-group, .container .form .form-group .col-3, .container .form .form-group .col-9, .container .form .form-group .form-input {
+      height: 36px;
+      line-height: 36px; }
+    .container .form .form-group {
+      width: 100%;
+      display: block;
+      margin-top: 25px; }
+      .container .form .form-group label {
+        color: #323232; }
+      .container .form .form-group .col-3 {
+        width: 120px;
+        text-align: right;
+        float: left;
+        padding-right: 15px; }
+      .container .form .form-group .col-9 {
+        width: 540px;
+        padding-left: 12px;
+        float: left; }
+      .container .form .form-group .form-input {
+        width: 540px;
+        color: #969696;
+        border: solid 1px #d9d9d9;
+        border-radius: 5px;
+        background: transparent; }
+      .container .form .form-group .radio {
+        margin: 0 10px; }
+      .container .form .form-group .switch {
+        width: 100px;
+        height: 24px;
+        color: #969696;
+        float: left; }
+        .container .form .form-group .switch .switchOpen {
+          display: inline-block;
+          width: 40px;
+          height: 24px;
+          margin: -6px 10px;
+          background: url(~assets/img/login/open.png) no-repeat center; }
+        .container .form .form-group .switch .switchOut {
+          display: inline-block;
+          width: 40px;
+          height: 24px;
+          margin: -6px 10px;
+          background: url(~assets/img/login/out.png) no-repeat center; }
+  .container .account {
+    width: 250px;
+    margin-right: 180px;
+    /* 上传头像 */
+    /* 第三方绑定开始 */ }
+    .container .account .accountTou .imges {
+      width: 176px;
+      height: 176px;
+      margin: 25px auto; }
+    .container .account .accountTou .shangchuan {
+      width: 100px;
+      height: 30px;
+      margin-left: 75px;
+      margin-bottom: 20px; }
+    .container .account .accountTou .format {
+      width: 100%;
+      text-align: center;
+      color: #949494; }
+    .container .account .accountBind h5 {
+      text-align: center;
+      line-height: 64px;
+      color: #333333; }
+    .container .account .accountBind .bindRemove {
+      width: 240px;
+      margin-left: 5px; }
+      .container .account .accountBind .bindRemove ul li {
+        float: left; }
+      .container .account .accountBind .bindRemove ul li a {
+        display: block;
+        width: 60px;
+        height: 80px;
+        color: #0668dc;
+        padding-top: 64px;
+        text-align: center;
+        text-decoration: underline;
+        margin: 0 10px; }
+      .container .account .accountBind .bindRemove .qq {
+        background: url(~assets/img/login/qq.png) no-repeat top center; }
+      .container .account .accountBind .bindRemove .weixin {
+        background: url(~assets/img/login/weixin.png) no-repeat top center; }
+      .container .account .accountBind .bindRemove .dingding {
+        background: url(~assets/img/login/dingding.png) no-repeat top center; }
+
+/* footer开始 */
+.footer {
+  width: 100%;
+  height: 44px;
+  background-color: #ededed;
+  position: fixed;
+  bottom: 0; }
+  .footer .btns {
+    width: 230px;
+    height: 32px;
+    margin-top: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -115px; }
+    .footer .btns .btn {
+      width: 60px;
+      height: 30px;
+      background-color: #2A8BFE; }
+    .footer .btns .btn:first-child {
+      margin-right: 105px; }
+
+/* footer结束 */
+/* 个人信息页结束 */
+
+/*# sourceMappingURL=index.css.map */

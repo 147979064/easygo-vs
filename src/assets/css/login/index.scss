@@ -1,0 +1,399 @@
+@charset "UTF-8";
+
+.pull-left{float: left;}   //左浮动
+.pull-right{float: right;} //右浮动
+//蓝色按钮统一样式
+.btn{
+    color: #FFFFFF;
+    font-size: 16px;
+     /* IE滤镜 */
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#8F2a8bfe,endColorstr=#8F2a8bfe);
+    /* CSS3 */
+    background-color: rgba(42,139,254,.8);
+    border: none;
+    border-radius: 5px;
+ }
+/* 登录界面样式开始 */
+html,body,.login{
+    width: 100%;
+    height: 100%;
+}
+$boxH:730px;    //登录盒子高度
+$logoH:64px;    //logo高度
+$titleH:70px;   //标题高度
+$groupH:48px;    //行高
+.login{
+    background: url('~assets/img/login/loginBg.png') no-repeat center;
+    background-size: cover;
+}
+.login .box{
+    width: 1180px;
+    min-height: $boxH;
+    margin: 0 auto;
+    padding-top: 40px;
+    /*logo开始*/
+   .logo{
+       width: 100%;
+       height: $logoH;
+       text-align: center;
+   }
+    /*标题开始*/
+   .title{
+       width: 100%;
+       height: $titleH;
+       text-align: center;
+       background: url('~assets/img/login/logoCenter.png') no-repeat center;
+       .titleLeft,.titleRight{
+           width: 300px;
+           height: $titleH;
+       }
+       .titleLeft{background: url('~assets/img/login/logoLeft.png') no-repeat left center;}
+       .titleRight{background: url('~assets/img/login/logoRight.png') no-repeat right center;}
+
+   }
+   /*表单开始*/
+  $formW: 400px;     //表单宽度
+    form{
+        width: $formW;
+        margin: 0 auto;
+         /*统一行开始*/
+        .group{
+            width: 100%;
+            height: $groupH;
+            margin: 20px 0;
+            /* IE滤镜 */
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#8FFFFFFF,endColorstr=#8FFFFFFF);
+            /* CSS3 */
+            background-color: rgba(255,255,255,.8);
+            border-radius: 5px;
+            input{
+                width: 340px;
+                height: $groupH;
+                line-height: $groupH;
+                background: transparent;
+                border: none;
+                outline: medium;
+            }
+            span{
+                display: block;
+                width: 60px;
+                height: $groupH;
+            }
+
+            .shouji{background: url('~assets/img/login/loginIcon01.png') no-repeat center;}
+            .nicheng{background: url('~assets/img/login/loginIcon03.png') no-repeat center;}
+            .mima{background: url('~assets/img/login/loginIcon04.png') no-repeat center;}
+            .mima2{background: url('~assets/img/login/loginIcon05.png') no-repeat center;}
+        }
+        /*验证码开始*/
+        .groupYz{
+            width: 400px;
+            height: $groupH;
+            .groupLeft{
+                width: 300px;
+                height: $groupH;
+                 /* IE滤镜 */
+                filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#8FFFFFFF,endColorstr=#8FFFFFFF);
+                /* CSS3 */
+                background-color: rgba(255,255,255,.8);
+                border-radius: 5px;
+                span{
+                    display: block;
+                    width: 60px;
+                    height: $groupH;
+                    background: url('~assets/img/login/loginIcon02.png') no-repeat center;
+                }
+                 input{
+                    width: 240px;
+                    height: $groupH;
+                    line-height: $groupH;
+                    background: transparent;
+                    border: none;
+                    outline: medium;
+                }
+            }
+
+            .btn01{
+                width: 90px;
+                height: $groupH;
+            }
+        }
+         /*阅读判断开始*/
+        .groupCon{
+            width: 100%;
+            height: 24px;
+            line-height: 24px;
+            margin-top: 40px;
+            text-align: right;
+            .confirm{
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url('~assets/img/login/loginIcon06.png') no-repeat center;
+                cursor: pointer;
+                &:hover,&:focus{
+                  background: url('~assets/img/login/loginIcon07.png') no-repeat center;
+                }
+            }
+            p{
+                color: #333333;
+                i{
+                    color: #2a8bfe;
+                    font-style: normal;
+                    text-decoration: underline;
+                }
+            }
+        }
+        /* 注册开始 */
+       .submit{
+            width: 100%;
+            height: $groupH;
+            margin: 20px 0;
+            .input02{
+                 width: 100%;
+                height: $groupH;
+                font-size: 22px;
+            }
+       }
+
+    }
+}
+
+/* 登录界面样式结束 */
+
+/* 个人信息页开始 */
+/* 顶部导航开始 */
+$width:1366px;              //界面内容宽度
+$headerH:60px;              //顶部高度
+.header{
+    width: $width;
+    height: $headerH;
+    margin: 0 auto;
+    overflow: hidden;
+    .headerLogo{
+        width: 300px;
+        height: $headerH;
+        background: url('~assets/img/login/logo01.png') no-repeat left center;
+    }
+    .headerRight{
+        width: 600px;
+        height: $headerH;
+        overflow: hidden;
+        .nav{
+            ul li{float: left;}
+            ul li a{
+                color: #333333;
+                line-height: $headerH;
+                padding: 0 20px;
+                &:hover,&:focus{
+                    color: #2a8bfe;
+                }
+            }
+        }
+        .loginInfor{
+            height: 30px;
+            margin-top: 15px;
+            span:first-child{
+                width: 30px;
+                height: 30px;
+                background: url('~assets/img/login/headMin.png') no-repeat center;
+            }
+             span:first-child + span{
+                 color: #0668dc;
+                 line-height: 30px;
+                 padding: 0 8px;
+             }
+              span:first-child + span + span{
+                width: 20px;
+                height: 30px;
+                 background: url('~assets/img/login/xiala.png') no-repeat center;
+                cursor: progress;
+              }
+        }
+    }
+}
+
+
+/* banner开始 */
+$bannerH:230px;
+.banner{
+    width: 100%;
+    height: $bannerH;
+    background-color: #7bb7ff;
+   .banners{
+        width: $width;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        .out{
+            position: absolute;
+            top:15px;
+            right: 15px;
+            width: 40px;
+            height: 40px;
+            background: url('~assets/img/login/bannerOut.png') no-repeat center;
+        }
+   }
+}
+/* banner结束 */
+
+ /* 面包屑开始 */
+  .Breadcrumb{
+     width: 100%;
+     height: 36px;
+     background-color: #f9fafa;
+     .BreadcrumbItems{
+         width: $width;
+         height: 36px;
+         line-height: 36px;
+         margin: 0 auto;
+         span,a{font-size: 18px;}
+         span{
+            color: #323232;
+            a{color: #2A8BFE;}
+         }
+     }
+}
+
+/* 主体内容开始 */
+.container{
+    width: $width;
+    min-height: 470px;
+    margin: 0 auto;
+    /* 左侧表单开始 */
+  .form{
+      width: 700px;
+       %colH{
+               height: 36px;
+              line-height: 36px;
+          }
+      .form-group{
+          width: 100%;
+          display: block;
+          @extend %colH;
+          margin-top: 25px;
+          label{color: #323232;}
+
+          .col-3{
+              width: 120px;
+              @extend %colH;
+              text-align: right;
+              float: left;
+              padding-right: 15px;
+          }
+          .col-9{
+              width: 540px;
+              padding-left: 12px;
+              @extend %colH;
+              float: left;
+          }
+          .form-input{
+               width: 540px;
+               color: #969696;
+               @extend %colH;
+               border:solid 1px #d9d9d9;
+               border-radius: 5px;
+               background: transparent;
+          }
+          .radio{margin: 0 10px;}
+          .switch{
+              width: 100px;
+              height: 24px;
+              color: #969696;
+              float: left;
+              .switchOpen{
+                  display: inline-block;
+                  width: 40px;
+                  height: 24px;
+                  margin: -6px 10px;
+                  background: url('~assets/img/login/open.png') no-repeat center;
+              }
+               .switchOut{
+                  display: inline-block;
+                  width: 40px;
+                  height: 24px;
+                  margin: -6px 10px;
+                  background: url('~assets/img/login/out.png') no-repeat center;
+              }
+          }
+      }
+  }
+   /* 右侧账号登录开始 */
+  .account{
+      width: 250px;
+      margin-right: 180px;
+       /* 上传头像 */
+      .accountTou{
+          .imges{
+              width: 176px;
+              height: 176px;
+              margin: 25px auto;
+          }
+          .shangchuan{
+              width: 100px;
+              height: 30px;
+              margin-left: 75px;
+              margin-bottom: 20px;
+          }
+          .format{
+              width: 100%;
+              text-align: center;
+              color: #949494;
+          }
+      }
+       /* 第三方绑定开始 */
+      .accountBind{
+          h5{
+              text-align: center;
+              line-height: 64px;
+              color: #333333;
+          }
+          .bindRemove{
+              width: 240px;
+              margin-left: 5px;
+              ul li { float: left;}
+              ul li a{
+                  display: block;
+                  width: 60px;
+                  height: 80px;
+                  color: #0668dc;
+                  padding-top: 64px;
+                  text-align: center;
+                  text-decoration: underline;
+                  margin: 0 10px;
+              }
+              .qq{background: url('~assets/img/login/qq.png') no-repeat top center;}
+              .weixin{background: url('~assets/img/login/weixin.png') no-repeat top center;}
+              .dingding{background: url('~assets/img/login/dingding.png') no-repeat top center;}
+          }
+      }
+  }
+}
+
+/* footer开始 */
+.footer{
+    width: 100%;
+    height: 44px;
+    background-color: #ededed;
+    position: fixed;
+    bottom: 0;
+    .btns{
+        width: 230px;
+        height: 32px;
+        margin-top: 6px;
+        position: absolute;
+        left: 50%;
+        margin-left: -115px;
+        .btn{
+            width: 60px;
+            height: 30px;
+            background-color: #2A8BFE;
+        }
+        .btn:first-child{margin-right: 105px; }
+    }
+}
+/* footer结束 */
+
+/* 个人信息页结束 */
+
